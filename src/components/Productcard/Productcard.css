@@ -1,0 +1,160 @@
+.product-card {
+    position: relative;
+    padding-bottom: 70px;
+}
+.product-card__content {
+    position: relative;
+    width: 320px;
+    min-height: 480px;
+    padding: 20px 50px;
+    color: black;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    transition-property: background-image;
+    background-image: url('../../images/card-default-bg.png');
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.product-card__content:hover .product-card__weight {
+    border-color: #00bfff;
+    background-color: #00bfff;
+}
+
+.product-card__content:hover .product-card__link {
+    color: #00bfff;
+}
+
+.product-card__content.is-selected {
+    background-image: url('../../images/card-selected-bg.png');
+}
+
+.product-card__content.is-selected .product-card__subhead {
+    color: #e62e7a;
+}
+
+.product-card__content.is-selected .product-card__weight {
+    background-color: #e62e7a;
+}
+
+.product-card__content.is-selected:hover .product-card__subhead {
+    color: black;
+}
+
+.product-card__content.is-selected:hover .product-card__weight {
+    background-color: #d91667;
+}
+
+.product-card__content.is-disabled {
+    color: #d2d2d2;
+    cursor: not-allowed;
+    pointer-events: none;
+    background-image: url('../../images/card-disabled-bg.png');
+}
+
+.product-card__content.is-disabled .product-card__subhead {
+    color: #b3b3b3;
+}
+
+.product-card__content.is-disabled .product-card__weight {
+    background-color: #b3b3b3;
+}
+
+.product-card__content.is-disabled .product-card__list {
+    color: #b3b3b3;
+}
+
+.product-card__content.is-disabled + .product-card__extra-text {
+    color: #ffff66;
+}
+
+.product-card__subhead {
+    margin: 0 0 10px;
+    color: #666666;
+    transition: .3s ease-in-out;
+    transition-property: color;
+}
+
+.product-card__title {
+    margin: 0 0 5px;
+    color: inherit;
+    font-size: 48px;
+    line-height: 46px;
+}
+
+.product-card__flavor {
+    margin: 0 0 10px;
+    color: inherit;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.product-card__list {
+    color: #666666;
+}
+
+.product-card__weight {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 22px;
+    transition: .3s ease-in-out;
+    transition-property: background-color;
+    background-color: #1698d9;
+    border-radius: 100%;
+}
+
+.product-card__weight-num {
+    margin: 20px 0 10px 0;
+}
+
+.product-card__weight-type {
+    font-size: 21px;
+}
+
+.product-card__extra-text {
+    position: absolute;
+    top: calc(100% - 50px);
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+}
+
+.product-card__link {
+    padding: 0;
+    color: #1698d9;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px dashed #1698d9;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    transition-property: color, border-color;
+}
+
+.product-list {
+    margin: 0;
+    padding: 5px 0;
+    list-style: none;
+    color: inherit
+}
+
+.product-list__item {
+    font-size: 14px;
+    line-height: 16px;
+    color: inherit;
+}
