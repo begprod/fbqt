@@ -25,6 +25,11 @@ body::after{
   z-index: -1;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .section {
   display: flex;
   flex-direction: column;
