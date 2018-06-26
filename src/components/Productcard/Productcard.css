@@ -1,6 +1,6 @@
 .product-card {
     position: relative;
-    padding-bottom: 70px;
+    margin-bottom: 60px;
 }
 .product-card__content {
     position: relative;
@@ -124,9 +124,9 @@
 }
 
 .product-card__extra-text {
-    position: absolute;
-    top: calc(100% - 50px);
+    margin-top: 15px;
     width: 100%;
+    min-height: 20px;
     color: #fff;
     font-size: 13px;
     line-height: 13px;
