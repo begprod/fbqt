@@ -51,10 +51,12 @@ class Productcard extends Component {
 
         if (this.state.selected) {
             disabledText = <div>{ this.props.selectedtext }</div>
+        } else {
+            selectedText = this.props.series;
         }
 
         return (
-            <div className="product-card" onMouseEnter={ this.mouseEnter } onMouseLeave={ this.mouseOut }>
+            <div className="product-card" onMouseEnter={ this.mouseOut } onMouseLeave={ this.mouseEnter }>
                 <div className={`product-card__content ` + (this.state.selected ? `is-selected` : ``) + (this.state.available ? `` : `is-disabled`)} onClick={ this.toggleSelect }>
                     <p className="product-card__subhead">
                         { (this.state.mouseOut ? selectedText : this.props.series) }

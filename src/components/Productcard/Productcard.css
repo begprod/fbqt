@@ -33,7 +33,7 @@
 }
 
 .product-card__content.is-selected .product-card__subhead {
-    color: #e62e7a;
+    color: #666666;
 }
 
 .product-card__content.is-selected .product-card__weight {
@@ -41,7 +41,7 @@
 }
 
 .product-card__content.is-selected:hover .product-card__subhead {
-    color: black;
+    color: #e62e7a;
 }
 
 .product-card__content.is-selected:hover .product-card__weight {
